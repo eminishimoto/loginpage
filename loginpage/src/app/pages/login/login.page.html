@@ -1,20 +1,30 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>login</ion-title>
+    <ion-title>login page</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
-
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-button>Button</ion-button>
-    </ion-buttons>
-    <ion-title>Default Buttons</ion-title>
-  </ion-toolbar>
-
-
-  <ion-button expand = "block" routerLik="/login" >GO to Login page </ion-button>
-<strong>Ready to create an app?</strong>
+  <div id="backdrop2" style="text-align: center;"><img src="../../../assets/background.gif"/></div>
+  <div id="backdrop">
+  <ion-button name="star" expand="block" color="dark" routerLink="/home">Go to home page</ion-button>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Please log in your details</ion-card-title>
+      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-item>
+        <ion-label>Email input</ion-label>
+        <ion-input type="email" placeholder="email@domain.com"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Password input</ion-label>
+        <ion-input type="password" value="password"></ion-input>
+      </ion-item>
+      <ion-button color="dark" (click)="btnClicked()">Warning</ion-button>
+    </ion-card-content>
+  </ion-card>
+</div>
 </ion-content>
